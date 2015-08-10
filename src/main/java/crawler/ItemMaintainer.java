@@ -119,7 +119,7 @@ public class ItemMaintainer implements PageProcessor {
                     float price = getTmallRealPrice(sku);
                     int stock = three.getJSONObject(";" + pvs + ";").getInt("stock");
                     int sell = getSellCount();
-                    item.getSkuItems().add(new SkuItem(sku, size, color, stock, sell, price));
+                    item.getSkuItems().add(new SkuItem(sku, color, size, stock, sell, price));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -246,7 +246,8 @@ public class ItemMaintainer implements PageProcessor {
                     .replace("//", "")
                     .replace("_60x60q90.jpg", ""));
             item.getClothingImages().add(clothingImages[i]);
-            new GetImage().getImage(item.getItemId() + "@" + i, clothingImages[i]);
+//            new GetImage().getImage(item.getItemId() + "@" + i, clothingImages[i]);
+            new GetImage().getImage(item.getItemName() + "@" + i, clothingImages[i]);
         }
     }
 

@@ -1,6 +1,6 @@
 //package resource.user;
 //
-//import resource.json.JImage;
+//import resource.json.ImageJson;
 //
 //import javax.ws.rs.Consumes;
 //import javax.ws.rs.POST;
@@ -18,7 +18,7 @@
 //    @POST
 //    @Produces(MediaType.TEXT_PLAIN)
 //    @Consumes(MediaType.APPLICATION_JSON)
-//    public boolean post(JImage jImage) {
+//    public boolean post(ImageJson jImage) {
 //        System.out.println(jImage.getUserID());
 //        System.out.println(jImage.getName());
 //        System.out.println(jImage.getFormat());

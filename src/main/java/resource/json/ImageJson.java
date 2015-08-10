@@ -1,6 +1,5 @@
 package resource.json;
 
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -8,23 +7,24 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Group iTailor.hunters.neu.edu.cn
  */
 @XmlRootElement(name = "image")
-public class JImage {
-    @XmlElement(name = "userID")
-    private String userID;
-    @XmlElement(name = "name")
+public class ImageJson {
+    private int userID;
     private String name;
-    @XmlElement(name = "format")
     private String format;
-    @XmlElement(name = "size")
     private String size;
-    @XmlElement(name = "description")
     private String description;
-    public JImage() {
+    private int imageID;
+    public ImageJson() {
     }
 
-    public String getUserID() {
+    public int getUserID() {
         return userID;
     }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
     public String getName() {
         return name;
     }
@@ -48,5 +48,14 @@ public class JImage {
     }
     public void setDescription(String description) {
         this.description = description;
+    }
+
+
+    public int getImageID() {
+        return imageID;
+    }
+
+    public void setImageID(int imageID) {
+        this.imageID = imageID;
     }
 }

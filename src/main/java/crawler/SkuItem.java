@@ -19,7 +19,7 @@ public class SkuItem {
     private int saleQuantity;
     private float price;
 
-    public SkuItem(String skuid, String size, String color, int stock, int saleQuantity, float price) {
+    public SkuItem(String skuid, String color, String size, int stock, int saleQuantity, float price) {
         this.skuid = skuid;
         this.size = size;
         this.color = color;

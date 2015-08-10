@@ -9,7 +9,7 @@ import java.sql.Timestamp;
  * Group iTailor.hunters.neu.edu.cn
  */
 @XmlRootElement(name = "registration")
-public class Registration {
+public class RegistrationJson {
     @XmlElement(name = "nickname")
     private String nickname;
     @XmlElement(name = "email")
@@ -21,9 +21,9 @@ public class Registration {
     @XmlElement(name = "timestamp")
     private Timestamp timestamp;
 
-    public Registration() {
+    public RegistrationJson() {
     }
-    public Registration(String nickname, String email, String password, String machID) {
+    public RegistrationJson(String nickname, String email, String password, String machID) {
         this.nickname = nickname;
         this.email = email;
         this.password = password;

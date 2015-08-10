@@ -1,14 +1,10 @@
 package resource.recommendation;
 
 import hibernate.community.Account;
-import resource.json.ResourceJson;
 import resource.service.AccountNewService;
 import resource.service.ShareItemNewService;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.HeaderParam;
-import javax.ws.rs.Path;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 
 /**
  * Created by liker on 02/08/2015 0002.
@@ -27,6 +23,14 @@ public class ShareItemResource {
             return shareItemNewService.getShareItemByID(shareItemID).getResource().becomeToJson();
         }
         return null;
+    }
+
+    @POST
+    public boolean postShareItem(@QueryParam("accountID") final int accountID,
+                                 @QueryParam("shareItemID") final int shareItemID,
+                                 @HeaderParam("password") final String password){
+        return false;
+
     }
 
 }

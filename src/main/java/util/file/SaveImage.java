@@ -1,5 +1,7 @@
 package util.file;
 
+import enums.MyPathManager;
+
 import java.io.*;
 
 /**
@@ -12,7 +14,7 @@ public class SaveImage {
         ByteArrayOutputStream bos = null;
         FileOutputStream fos = null;
         try {
-            File imagePath = new File("..\\images");
+            File imagePath = new File(MyPathManager.imagePath);
             if (!imagePath.exists()) {
                 imagePath.mkdir();
             }

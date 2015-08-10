@@ -2,7 +2,6 @@ package resource.recommendation;
 
 import hibernate.community.Account;
 import hibernate.recommendation.User;
-import resource.json.ResourceJson;
 import resource.service.AccountNewService;
 import resource.service.SearchService;
 import resource.service.UserService;

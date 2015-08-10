@@ -504,18 +504,6 @@ public class AccountResource {
                     }
                 }
             }
-//            for (ShareItem shareItem : account.getShareItems()) {
-//                if (shareItem.getShareItemID() == shareItemID) {
-//                    for (Comment comment : shareItem.getComments()) {
-//                        if (comment.getMessageID() == commentID) {
-//                            if (account.getUser().equals(shareItem.getResource().getUser())
-//                                    || comment.getSenderAccount().equals(account)) {
-//                                shareItem.getComments().remove(comment);
-//                            }
-//                        }
-//                    }
-//                }
-//            }
             //评论删除有没有同步我很期待Java对象管理给予我肯定回复
             return true;
         }
