@@ -4,5 +4,6 @@
     <p><a href="itailor/example">Jersey resource</a>
     <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
     for more information on Jersey!
+        cmd>ipconfig
 </body>
 </html>

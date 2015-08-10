@@ -68,11 +68,11 @@ public class ShareItem {
     public ShareItemJson becomeToJson() {
         ShareItemJson shareItemJson = new ShareItemJson();
         shareItemJson.setCreatedTime(this.getCreatedTime());
-        shareItemJson.setResourceID(this.resource == null ? 0 : this.resource.getResourceId());
-        shareItemJson.setShareItemID(this.shareItemID);
-        for (Comment comment : this.getComments()) {
-            shareItemJson.getCommentIDs().add(comment.getMessageID());
-        }
+//        shareItemJson.setResourceID(this.resource == null ? 0 : this.resource.getResourceId());
+//        shareItemJson.setShareItemID(this.shareItemID);
+//        for (Comment comment : this.getComments()) {
+//            shareItemJson.getCommentIDs().add(comment.getMessageID());
+//        }
         return shareItemJson;
     }
 

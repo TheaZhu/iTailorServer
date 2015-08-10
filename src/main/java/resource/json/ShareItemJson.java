@@ -26,4 +26,36 @@ public class ShareItemJson {
         shareItem.setResource(new Resource());
         return shareItem;
     }
+
+    public int getAccountID() {
+        return accountID;
+    }
+
+    public void setAccountID(int accountID) {
+        this.accountID = accountID;
+    }
+
+    public ImageJson getImageJson() {
+        return imageJson;
+    }
+
+    public void setImageJson(ImageJson imageJson) {
+        this.imageJson = imageJson;
+    }
+
+    public List<CommentJson> getCommentJsons() {
+        return commentJsons;
+    }
+
+    public void setCommentJsons(List<CommentJson> commentJsons) {
+        this.commentJsons = commentJsons;
+    }
+
+    public Timestamp getCreatedTime() {
+        return createdTime;
+    }
+
+    public void setCreatedTime(Timestamp createdTime) {
+        this.createdTime = createdTime;
+    }
 }

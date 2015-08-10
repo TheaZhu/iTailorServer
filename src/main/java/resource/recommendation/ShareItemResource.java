@@ -1,6 +1,7 @@
 package resource.recommendation;
 
 import hibernate.community.Account;
+import resource.json.ResourceJson;
 import resource.service.AccountNewService;
 import resource.service.ShareItemNewService;
 

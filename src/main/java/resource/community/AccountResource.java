@@ -40,6 +40,7 @@ public class AccountResource {
         if (accountNewService.isEmailWellFormatted(email)) {
             if (accountNewService.getAccountForWellFormattedEmail(email) == null) {
                 accountNewService.registerAccountForWellFormattedEmail(email, password);
+                new BaseDAO<Account>().create(new Account(email,password));
                 return true;
             }
         }

@@ -526,7 +526,7 @@ public class AccountResourceTest extends JerseyTest {
                 .header("password", godJson.getPassword());
 
         ShareItemJson shareItemJson = new ShareItemJson();
-        shareItemJson.setCommentIDs(null);
+//        shareItemJson.setCommentIDs(null);
         shareItemJson.setCreatedTime(new Timestamp(System.currentTimeMillis()));
 
         Entity<ShareItemJson> e = Entity.entity(shareItemJson, MediaType.APPLICATION_JSON);

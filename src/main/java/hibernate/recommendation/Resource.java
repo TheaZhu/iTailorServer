@@ -1,5 +1,7 @@
 package hibernate.recommendation;
 
+import resource.json.ResourceJson;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 /**
